@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
 <meta name="google-site-verification" content="RMTayjT7cAtUQcbXNwJdxldHG_pWN6jdTRJj0p57wS4" />
 <meta charset="utf-8">
 <meta name="description"
@@ -317,6 +316,25 @@ grid-template-columns:1fr}
 padding:24px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 
+
+/* Premium cybersecurity banner */
+.brand-banner {
+  width: min(1400px, 94%);
+  margin: 24px auto 0;
+  overflow: hidden;
+  border: 1px solid rgba(66,232,245,.28);
+  border-radius: 16px;
+  box-shadow: 0 0 32px rgba(66,232,245,.13);
+}
+.brand-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media(max-width:600px) {
+  .brand-banner { width: 94%; margin-top: 16px; border-radius: 10px; }
+}
+
 .single-page-view { display:none; }
 .single-page-view.active { display:block; }
 </style>
@@ -339,6 +357,11 @@ padding:24px}}
 </header>
 <main id="app-main">
   <section class="single-page-view" id="home">
+<div class="brand-banner">
+  <img src="cyber-banner.png"
+       alt="Manpreet Cyber Security — learn, protect and stay safe"
+       fetchpriority="high">
+</div>
 <section class="hero" id="home-inner">
 <span class="eyebrow">● Digital safety starts here</span>
 <h1>Secure Your Digital World.<br/><span class="gradient-text">Stay One Step Ahead.</span></h1>
